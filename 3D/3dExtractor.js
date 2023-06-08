@@ -60,12 +60,12 @@ async function extract3DModel(url) {
     request(modelUrls[0])
       .pipe(fs.createWriteStream(filePath))
       .on("close", () => {
-        console.log(`${filePath} downloaded successfully.`);
+        console.log(`${fileName} downloaded successfully.`);
         results.push({
           url: url,
           hasModel: true,
           downloaded: true,
-          fileName: filePath,
+          fileName: fileName,
         });
         // Append the results to the JSON file
         fs.writeFileSync(
@@ -74,11 +74,12 @@ async function extract3DModel(url) {
         );
       });
   } else {
+    console.log(`${fileName} downloading failed !.`);
     results.push({
       url: url,
       hasModel: false,
       downloaded: false,
-      fileName: null,
+      fileName: fileName,
     });
     // Append the results to the JSON file
     fs.writeFileSync(
