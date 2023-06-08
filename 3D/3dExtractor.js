@@ -1,6 +1,7 @@
 const puppeteer = require("puppeteer");
 const request = require("request");
 const fs = require("fs");
+const urlModule = require("url");
 const requestPromise = require("request-promise");
 
 // Initialize results array
@@ -8,15 +9,19 @@ let results = [];
 
 async function extract3DModel(url) {
   // Launch the puppeteer browser
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "networkidle2" });
 
+  const parsedUrl = new urlModule.URL(url);
   // Extract PID and ITM from URL
   let urlParts = url.split("/");
-  let itm = urlParts[urlParts.length - 2].split("?")[0];
-  let pid = urlParts[urlParts.length - 1].split("?")[0];
-
+  //let itm = urlParts[urlParts.length - 2].split("?")[0];
+  let itm = urlParts[urlParts.length - 1].split("?")[0];
+  let pid = parsedUrl.searchParams.get("pid");
+  console.log("urlParts :" + urlParts);
+  console.log("itm : " + itm);
+  console.log("pid : " + pid);
   // Search for 3D model URL
   const modelUrls = await page.evaluate(() => {
     let urls = [];
@@ -66,5 +71,5 @@ async function extract3DModel(url) {
 }
 
 extract3DModel(
-  "https://www.flipkart.com/realme-10-pro-5g-hyperspace-128-gb/p/itm1e672d12a252e?pid=MOBGK8VHZPVGJCES&lid=LSTMOBGK8VHZPVGJCES9YRIWN&marketplace=FLIPKART&store=tyy%2F4io&pageUID=1686204613573"
+  "https://www.flipkart.com/nothing-phone-1-black-256-gb/p/itmeea53a564de47?pid=MOBGCYGPWXYRRNB4&lid=LSTMOBGCYGPWXYRRNB426WTZ8&marketplace=FLIPKART&store=tyy%2F4io&pageUID=1686205138161"
 );
