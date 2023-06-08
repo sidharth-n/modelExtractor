@@ -1,38 +1,8 @@
 [
-    {
-        "url": "demo",
-        "hasModel": true,
-        "downloaded": true,
-        "fileName": "demo"
-    },
-    {
-        "url": "https://www.flipkart.com/apple-iphone-14-midnight-128-gb/p/itm9e6293c322a84?pid=MOBGHWFHECFVMDCX&lid=LSTMOBGHWFHECFVMDCXBOYSND&marketplace=FLIPKART&q=iphone&store=tyy%2F4io&spotlightTagId=FkPickId_tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=f26ffd5e-cdb9-4b4f-847d-f3b9de33e25d.MOBGHWFHECFVMDCX.SEARCH&ppt=sp&ppn=sp&ssid=63u2o86k3n9nop341686212973582&qH=0b3f45b266a97d70",
-        "hasModel": false,
-        "downloaded": false,
-        "fileName": "itm9e6293c322a84-MOBGHWFHECFVMDCX.glb"
-    },
-    {
-        "url": "https://www.flipkart.com/google-pixel-7-pro-obsidian-128-gb/p/itmb74dc5c3b3eb5?pid=MOBGHW44NRFHVRZY&lid=LSTMOBGHW44NRFHVRZYZBL0DS&marketplace=FLIPKART&store=tyy%2F4io&pageUID=1686205042302",
-        "hasModel": true,
-        "downloaded": true,
-        "fileName": "itmb74dc5c3b3eb5-MOBGHW44NRFHVRZY.glb"
-    },
-    {
-        "url": "https://www.flipkart.com/nothing-phone-1-black-256-gb/p/itmeea53a564de47?pid=MOBGCYGPWXYRRNB4&lid=LSTMOBGCYGPWXYRRNB426WTZ8&marketplace=FLIPKART&store=tyy%2F4io&pageUID=1686205138161",
-        "hasModel": true,
-        "downloaded": true,
-        "fileName": "itmeea53a564de47-MOBGCYGPWXYRRNB4.glb"
-    },
-    {
-        "url": "https://www.flipkart.com/google-pixel-7a-sea-128-gb/p/itmb4d7b100b1a4d?pid=MOBGZCQM8PZEGRWU&lid=LSTMOBGZCQM8PZEGRWU0X8NQN&pageUID=1686205016010",
-        "hasModel": true,
-        "downloaded": true,
-        "fileName": "itmb4d7b100b1a4d-MOBGZCQM8PZEGRWU.glb"
-    },
-    {
-        "url": "https://www.flipkart.com/google-pixel-6a-charcoal-128-gb/p/itme5ae89135d44e?pid=MOBGFKX5YUXD74Z3&lid=LSTMOBGFKX5YUXD74Z3MXA2OB&marketplace=FLIPKART&store=tyy%2F4io&pageUID=1686204996243",
-        "hasModel": true,
-        "downloaded": true,
-        "fileName": "itme5ae89135d44e-MOBGFKX5YUXD74Z3.glb"
-    }
+  {
+    "url": "demo",
+    "hasModel": true,
+    "downloaded": true,
+    "fileName": "demo"
+  }
 ]
