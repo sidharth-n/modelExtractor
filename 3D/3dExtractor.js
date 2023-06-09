@@ -74,7 +74,7 @@ async function extract3DModel(url) {
         );
       });
   } else {
-    console.log(`${fileName} downloading failed !.`);
+    console.log(`${fileName} model not found !`);
     results.push({
       url: url,
       hasModel: false,
